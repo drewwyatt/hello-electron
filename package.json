@@ -2,7 +2,7 @@
   "name": "hello-electron",
   "version": "0.1.0",
   "description": "",
-  "main": "main.js",
+  "main": "build/electron.js",
   "devDependencies": {
     "gulp": "^3.9.0"
   }
