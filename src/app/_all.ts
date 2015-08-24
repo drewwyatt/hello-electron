@@ -4,3 +4,5 @@
 /// <reference path="lib/jquery.d.ts" />
 /// <reference path="app.config.ts" />
 /// <reference path="hello/hello.controller.ts" />
+/// <reference path="hello/hello.user.ts" />
+/// <reference path="hello/hello.user.interface.ts" />
