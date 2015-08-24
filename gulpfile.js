@@ -50,6 +50,12 @@ gulp.task('copy-html', function() {
     .pipe(gulp.dest('build/assets/html'));
 });
 
+gulp.task('copy-images', function() {
+  gulp.src(['src/**/*.jpg', 'src/**/*.png'])
+    .pipe(flatten())
+    .pipe(gulp.dest('build/assets/images'));
+});
+
 gulp.task('electron', function() {
   gulp.src(['src/electron.js'])
     .pipe(gulp.dest('build'));
@@ -57,7 +63,7 @@ gulp.task('electron', function() {
 
 gulp.task('startup', function() {
   runSequence(
-		['copy-bower', 'compile-typescript', 'compile-sass', 'copy-html', 'electron'],
+		['copy-bower', 'compile-typescript', 'compile-sass', 'copy-html', 'copy-images', 'electron'],
 		'watch'
 	);
 });
