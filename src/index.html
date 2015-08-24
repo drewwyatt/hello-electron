@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
-    <style>
-      html, body {
-        background: red;
-      }
-    </style>
+    <title>Hello Electron!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/lib/vendor.js"></script>
+    <script src="app.js"></script>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using io.js <script>document.write(process.version)</script>
-    and Electron <script>document.write(process.versions['electron'])</script>.
-    <img src="assets/icon.png" />
+  <body ng-app="hello-electron">
+    <section ui-view></section>
   </body>
 </html>

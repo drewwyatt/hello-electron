@@ -16,6 +16,7 @@ gulp.task('watch', function() {
   gulp.watch('src/**/*.ts', ['compile-typescript']);
   gulp.watch('src/**/*.scss', ['compile-sass']);
   gulp.watch('src/**/*.html', ['copy-html']);
+  gulp.watch('src/electron.js', ['electron']);
 });
 
 gulp.task('copy-bower', function() {
