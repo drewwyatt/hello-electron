@@ -1,0 +1,24 @@
+html, body {
+  background: $outer-space-color;
+  color: $deep-pink-color;
+}
+
+p {
+  color: inherit;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+}
+
+span {
+  color: $medium-aquamarine-color;
+}
+
+strong {
+  color: $west-side-color;
+  font-weight: bold;
+}
+
+input {
+  background: $medium-slate-blue-color;
+  color: $starship-color;
+}
